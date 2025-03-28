@@ -1,0 +1,21 @@
+body {
+    background: transparent;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#chat {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 300px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.message {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}

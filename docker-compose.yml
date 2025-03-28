@@ -1,0 +1,21 @@
+services:
+  theatrical-overlay:
+    image: blasseyehub/theatrical-overlay:v0.0.0
+    container_name: theatrical-overlay
+    ports:
+      - "3000:3000"
+    environment:
+      - STREAMER_NAME=twitch
+    restart: unless-stopped
+    volumes:
+     - ./data:/app/data
+    entrypoint: ["/app/entrypoint.sh"]
+    networks:
+      - theatrical-overlay-net
+
+volumes:
+  data:
+
+networks:
+  theatrical-overlay-net:
+    driver: bridge

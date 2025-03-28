@@ -1,0 +1,11 @@
+{
+    "name": "theatrical-overlay",
+    "version": "0.0.0",
+    "description": "Overlay pour afficher le chat Twitch",
+    "main": "server.js",
+    "dependencies": {
+      "express": "^4.18.2",
+      "tmi.js": "^1.8.5",
+      "socket.io": "^4.7.2"
+    }
+  }
