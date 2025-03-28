@@ -21,6 +21,6 @@ client.on('message', (channel, tags, message, self) => {
     io.emit('chatMessage', { user: tags['display-name'], message });
 });
 
-app.use(express.static('public'));
+app.use(express.static('data'));
 
 server.listen(3000, () => console.log('Serveur démarré sur http://localhost:3000'));
